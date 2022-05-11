@@ -1,0 +1,19 @@
+{
+  "name": "testcafe_uiautomation",
+  "version": "1.0.0",
+  "description": "TestCafe UI Automation framework ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "TestCafe",
+    "UIAutomation",
+    "JavaScript"
+  ],
+  "author": "Sritaj Kumar Patel",
+  "license": "ISC",
+  "dependencies": {
+    "testcafe": "^1.18.6"
+  }
+}
