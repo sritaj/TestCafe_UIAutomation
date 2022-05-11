@@ -14,6 +14,7 @@
   "author": "Sritaj Kumar Patel",
   "license": "ISC",
   "dependencies": {
+    "prettier": "^2.6.2",
     "testcafe": "^1.18.6"
   }
 }
