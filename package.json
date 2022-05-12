@@ -4,7 +4,10 @@
 	"description": "TestCafe UI Automation framework ",
 	"main": "index.js",
 	"scripts": {
-		"test": "testcafe chrome ./tests"
+		"test:chrome": "testcafe chrome ./tests",
+		"test:chrome:headless": "testcafe chrome:headless ./tests",
+    "test:chrome:mobile": "testcafe chrome:emulation:device=iphone 13promax ./tests" ,
+		"test:safari": "testcafe safari ./tests"
 	},
 	"keywords": [
 		"TestCafe",
