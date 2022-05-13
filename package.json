@@ -7,6 +7,7 @@
 		"test:chrome": "testcafe chrome ./tests -s takeOnFails=true",
 		"test:chrome:parallel": "testcafe -c 5 chrome ./tests -s takeOnFails=true",
 		"test:chrome:headless": "testcafe chrome:headless ./tests -s takeOnFails=true",
+		"test:chrome:headless:parallel": "testcafe -c 5 chrome:headless ./tests -s takeOnFails=true",
 		"test:chrome:mobile": "testcafe chrome:emulation:device=iphone 13promax ./tests -s takeOnFails=true",
 		"test:safari": "testcafe safari ./tests -s takeOnFails=true"
 	},
