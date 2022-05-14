@@ -11,6 +11,6 @@ test("Validate Scenario with Selectors usage", async (t) => {
 	await t
 		.typeText(nameInputField, "Sritaj")
 		.click(submitButton)
-		.expect(Selector(articleHeader).innerText)
+		.expect(articleHeader.innerText)
 		.contains("Sritaj");
 });
