@@ -14,7 +14,7 @@ test.meta("severity", "p1")(
 		await t
 			.typeText(nameInputField, "Sritaj")
 			.click(submitButton)
-			.expect(Selector(articleHeader).innerText)
+			.expect(articleHeader.innerText)
 			.contains("Sritaj");
 	}
 );
@@ -25,7 +25,7 @@ test.meta("severity", "p2")(
 		await t
 			.typeText(nameInputField, "Anusha")
 			.click(submitButton)
-			.expect(Selector(articleHeader).innerText)
+			.expect(articleHeader.innerText)
 			.contains("Anusha");
 	}
 );
