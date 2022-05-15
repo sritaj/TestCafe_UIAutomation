@@ -1,5 +1,6 @@
 {
 	"screenshots": {
+		"path": "test-artifcats/screenshots",
 		"pathPattern": "${DATE}_${TIME}/${TEST}.png"
 	}
 }
