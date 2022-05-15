@@ -24,6 +24,22 @@ class HomePage {
 			.click(this.currencyList)
 			.click(Selector("option", { text: currency }));
 	}
+
+	async clickOnLogin() {
+		await t.click(this.logInLink);
+	}
+
+	async clickOnLogout() {
+		await t.click(this.logOutLink);
+	}
+
+	async clickOnMyAccount() {
+		await t.click(this.myAccountLink);
+	}
+
+	async clickOnRegisterLink() {
+		await t.click(this.registerLink);
+	}
 }
 
 export default new HomePage();

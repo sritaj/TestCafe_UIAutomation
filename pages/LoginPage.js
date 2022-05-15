@@ -4,8 +4,15 @@ class LoginPage {
 	constructor() {
 		this.emailInput = Selector("#Email");
 		this.passwordInput = Selector("#Password");
-		this.submitButton = Selector("#input.button-1.login-button");
+		this.loginButton = Selector("button[class='button-1 login-button']");
 		this.accountHeader = Selector("strong").withText("Returning Customer");
+	}
+
+	async loginToAccount(email, password) {
+		await t
+			.typeText(this.emailInput, email)
+			.typeText(this.passwordInput, password)
+			.click(this.loginButton);
 	}
 }
 

@@ -34,6 +34,22 @@ class RegisterPage {
 
 		await t.click(this.dateOfBirthYearList).click(yearOption.withText(year));
 	}
+	
+	async registerUser(firstName, lastName, day, month, year, email, password) {
+		await t
+			.click(this.genderOption)
+			.typeText(this.firstName, firstName)
+			.typeText(this.lastName, lastName);
+
+		await this.selectDay(day);
+		await this.selectMonth(month);
+		await this.selectYear(year);
+		await t
+			.typeText(this.email, email)
+			.typeText(this.password, password)
+			.typeText(this.confirmPassword, password)
+			.click(this.registerButton);
+	}
 }
 
 export default new RegisterPage();
