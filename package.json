@@ -20,6 +20,7 @@
 	"author": "Sritaj Kumar Patel",
 	"license": "ISC",
 	"dependencies": {
+		"@ffmpeg-installer/ffmpeg": "^1.1.0",
 		"prettier": "^2.6.2",
 		"testcafe": "^1.18.6"
 	},
