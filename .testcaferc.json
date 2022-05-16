@@ -15,7 +15,12 @@
 	"selectorTimeout": 3000,
 	"assertionTimeout": 1000,
 	"pageLoadTimeout": 1000,
-	"reporter": {
-		"name": "allure"
-	}
+	"reporter": [
+		{
+			"name": "list"
+		},
+		{
+			"name": "allure"
+		}
+	]
 }
