@@ -26,6 +26,7 @@
 		"@ffmpeg-installer/ffmpeg": "^1.1.0",
 		"prettier": "^2.6.2",
 		"testcafe": "^1.18.6",
+		"testcafe-reporter-html": "^1.4.6",
 		"xpath-to-css": "^1.1.0"
 	}
 }
