@@ -4,15 +4,15 @@ import RegisterPage from "../../pages/ecommerce-pages/RegisterPage";
 import LoginPage from "../../pages/ecommerce-pages/LoginPage";
 import CustomerPage from "../../pages/ecommerce-pages/CustomerPage";
 import { faker } from "@faker-js/faker";
+import { userVariables } from "testcafe";
 
 const dataSet = require("../../z-test-files/data.json");
-const URL = "https://demo.nopcommerce.com/";
 const getPageURL = ClientFunction(() => window.location.href);
 
-fixture("Registration Fixture").page(URL);
+fixture("Registration Fixture").page(userVariables.url);
 
 test("Assert Home Page", async (t) => {
-	await t.expect(getPageURL()).eql(URL);
+	await t.expect(getPageURL()).eql(userVariables.url);
 	await t.expect(HomePage.subTitleHeader.exists).ok;
 });
 
@@ -92,7 +92,7 @@ test("Assert User Registration and Login Test - Code Refactored", async (t) => {
 Test Validating User Registration and Login Test with Data Driven approach
 */
 dataSet.forEach((data) => {
-	test("Assert User Registration and Login Test - Data Driven", async (t) => {
+	test.skip("Assert User Registration and Login Test - Data Driven", async (t) => {
 		await HomePage.clickOnRegisterLink();
 		await t.expect(getPageURL()).contains("register");
 		//Create New User
