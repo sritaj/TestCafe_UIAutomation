@@ -1,8 +1,8 @@
 import { ClientFunction } from "testcafe";
-import HomePage from "../../pages/HomePage";
-import RegisterPage from "../../pages/RegisterPage";
-import LoginPage from "../../pages/LoginPage";
-import CustomerPage from "../../pages/CustomerPage";
+import HomePage from "../../pages/ecommerce-pages/HomePage";
+import RegisterPage from "../../pages/ecommerce-pages/RegisterPage";
+import LoginPage from "../../pages/ecommerce-pages/LoginPage";
+import CustomerPage from "../../pages/ecommerce-pages/CustomerPage";
 import { faker } from "@faker-js/faker";
 
 const dataSet = require("../../z-test-files/data.json");
