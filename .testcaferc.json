@@ -22,5 +22,8 @@
 		{
 			"name": "allure"
 		}
-	]
+	],
+	"userVariables": {
+		"url": "https://demo.nopcommerce.com/"
+	}
 }
