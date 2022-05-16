@@ -5,6 +5,7 @@ import LoginPage from "../../pages/LoginPage";
 import CustomerPage from "../../pages/CustomerPage";
 import { faker } from "@faker-js/faker";
 
+const dataSet = require("../../z-test-files/data.json");
 const URL = "https://demo.nopcommerce.com/";
 const getPageURL = ClientFunction(() => window.location.href);
 
@@ -85,4 +86,35 @@ test("Assert User Registration and Login Test - Code Refactored", async (t) => {
 	await t.expect(CustomerPage.ordersLink.exists).ok();
 	await CustomerPage.clickOnOrdersLink();
 	await t.expect(CustomerPage.noOrdersLabel.exists).ok();
+});
+
+/*
+Test Validating User Registration and Login Test with Data Driven approach
+*/
+dataSet.forEach((data) => {
+	test("Assert User Registration and Login Test - Data Driven", async (t) => {
+		await HomePage.clickOnRegisterLink();
+		await t.expect(getPageURL()).contains("register");
+		//Create New User
+		await RegisterPage.registerUser(
+			data.firstname,
+			data.lastname,
+			data.birthday,
+			data.birthmonth,
+			data.birthyear,
+			data.email,
+			data.password
+		);
+		await t.expect(RegisterPage.successfullMessage.exists).ok();
+		//Logout and Login
+		await HomePage.clickOnLogout();
+		await HomePage.clickOnLogin();
+		await t.expect(LoginPage.accountHeader.exists).ok();
+		await LoginPage.loginToAccount(data.email, data.password);
+		//Navigate to Customer Page and Verify Orders
+		await HomePage.clickOnMyAccount();
+		await t.expect(CustomerPage.ordersLink.exists).ok();
+		await CustomerPage.clickOnOrdersLink();
+		await t.expect(CustomerPage.noOrdersLabel.exists).ok();
+	});
 });
