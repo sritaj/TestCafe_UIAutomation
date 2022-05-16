@@ -1,0 +1,58 @@
+{
+  "uid" : "55f22f971bd58e48",
+  "name" : "Validate Scenario with Selectors usage",
+  "fullName" : "Test demonstrating Selectors in TestCafe.Validate Scenario with Selectors usage",
+  "historyId" : "e1e76e88dd14e25f59acbbda7f3c086",
+  "time" : {
+    "start" : 1652725980254,
+    "stop" : 1652725987485,
+    "duration" : 7231
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "statusMessage" : "This test has been passed.",
+  "statusTrace" : "no error",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "undefined"
+  }, {
+    "name" : "suite",
+    "value" : "Test demonstrating Selectors in TestCafe"
+  }, {
+    "name" : "testClass",
+    "value" : "Test demonstrating Selectors in TestCafe"
+  }, {
+    "name" : "testMethod",
+    "value" : "Validate Scenario with Selectors usage"
+  }, {
+    "name" : "package",
+    "value" : "Test demonstrating Selectors in TestCafe"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "User Agent",
+    "value" : "Chrome 101.0.4951.64 / macOS 10.15.7"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "55f22f971bd58e48.json",
+  "parameterValues" : [ "Chrome 101.0.4951.64 / macOS 10.15.7" ]
+}

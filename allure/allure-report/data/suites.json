@@ -1,0 +1,26 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Test demonstrating Selectors in TestCafe",
+    "children" : [ {
+      "name" : "Validate Scenario with Selectors usage",
+      "uid" : "55f22f971bd58e48",
+      "parentUid" : "ad60b7012eb13340eaecff16cfc8a08f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652725980254,
+        "stop" : 1652725987485,
+        "duration" : 7231
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "Chrome 101.0.4951.64 / macOS 10.15.7" ]
+    } ],
+    "uid" : "ad60b7012eb13340eaecff16cfc8a08f"
+  } ]
+}
