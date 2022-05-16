@@ -1,11 +1,11 @@
 {
 	"browsers": "chrome",
 	"screenshots": {
-		"path": "test-artifcats/screenshots",
+		"path": "test-artifacts/screenshots",
 		"pathPattern": "${DATE}_${TIME}/${TEST}.png",
 		"takeOnFails": true
 	},
-	"videoPath": "test-artifcats/videos",
+	"videoPath": "test-artifacts/videos",
 	"videoOptions": {
 		"singleFile": true,
 		"failedOnly": true,
