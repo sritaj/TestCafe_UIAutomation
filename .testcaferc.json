@@ -1,6 +1,18 @@
 {
+	"browsers": "chrome",
 	"screenshots": {
 		"path": "test-artifcats/screenshots",
+		"pathPattern": "${DATE}_${TIME}/${TEST}.png",
+		"takeOnFails": true
+	},
+	"videoPath": "test-artifcats/videos",
+	"videoOptions": {
+		"singleFile": true,
+		"failedOnly": true,
 		"pathPattern": "${DATE}_${TIME}/${TEST}.png"
-	}
+	},
+	"concurrency": 1,
+	"selectorTimeout": 3000,
+	"assertionTimeout": 1000,
+	"pageLoadTimeout": 1000
 }
