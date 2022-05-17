@@ -12,7 +12,8 @@
 		"test:chrome:mobile": "testcafe chrome:emulation:device=iphone 13promax ./test -s takeOnFails=true",
 		"test:safari": "testcafe safari ./test -s takeOnFails=true",
 		"test:multiple": "testcafe chrome,firefox ./test -s takeOnFails=true",
-		"test": "testcafe"
+		"test": "testcafe",
+		"test:examples:chrome:headless": "testcafe chrome:headless ./test/testcafe-basic-examples -s takeOnFails=true --reporter html:test-artifacts/reports/reporter.html"
 	},
 	"keywords": [
 		"TestCafe",
@@ -26,7 +27,7 @@
 		"@ffmpeg-installer/ffmpeg": "^1.1.0",
 		"prettier": "^2.6.2",
 		"testcafe": "^1.18.6",
-		"testcafe-reporter-allure": "^1.0.5",
+		":re": "^1.0.5",
 		"testcafe-reporter-html": "^1.4.6",
 		"testcafe-reporter-list": "^2.1.0",
 		"xpath-to-css": "^1.1.0"
