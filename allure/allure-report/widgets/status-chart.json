@@ -1,0 +1,11 @@
+[ {
+  "uid" : "1ffdf907466663b2",
+  "name" : "Validate Scenario with Selectors usage",
+  "time" : {
+    "start" : 1652864659464,
+    "stop" : 1652864665510,
+    "duration" : 6046
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

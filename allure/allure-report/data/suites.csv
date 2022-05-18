@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed May 18 14:34:19 IST 2022","Wed May 18 14:34:25 IST 2022","6046","","Test demonstrating Selectors in TestCafe","","Test demonstrating Selectors in TestCafe","Validate Scenario with Selectors usage","Validate Scenario with Selectors usage",""
