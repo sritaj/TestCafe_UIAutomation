@@ -1,6 +1,6 @@
 {
 	"name": "testcafe_uiautomation",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "TestCafe UI Automation framework ",
 	"main": "index.js",
 	"scripts": {
@@ -13,7 +13,8 @@
 		"test:safari": "testcafe safari test -s takeOnFails=true",
 		"test:multiple": "testcafe chrome,firefox test -s takeOnFails=true",
 		"test": "testcafe",
-		"test:examples:chrome:headless": "testcafe chrome:headless test/testcafe-basic-examples -s takeOnFails=true --reporter html:test-artifacts/reports/reporter.html"
+		"test:examples:chrome:headless": "testcafe chrome:headless test/testcafe-basic-examples -s takeOnFails=true --reporter html:test-artifacts/reports/reporter.html --reporter list",
+		"test:examples:chrome:headless:parallel": "testcafe -c 5 chrome:headless test/testcafe-basic-examples -s takeOnFails=true --reporter html:test-artifacts/reports/reporter.html --reporter list"
 	},
 	"keywords": [
 		"TestCafe",

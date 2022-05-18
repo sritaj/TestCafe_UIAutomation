@@ -1,0 +1,11 @@
+version: "3"
+services:
+  hub:
+    image: testcafe_uiautomation:latest
+    restart: always
+    environment:
+      - BROWSER=${BROWSER}
+      - CONCURRENCY=${CONCURRENCY}
+    container_name: TestCafe_v1.0.1
+    volumes:
+      - /Users/sritaj/TechnicalKnowHow/JavaScriptUIAutomationTools/TestCafe/TestCafe_DockerResults:/app/test-artifacts/
