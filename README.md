@@ -11,61 +11,81 @@ UI Automation Framework with **_TestCafe_** demonstrating **_common operations, 
 3. Node, NPM
 4. Allure Reports
 
-##Instructions
+## Instructions
 
-###Installing TestCafe
+### Installing TestCafe
+
 Ensure that Node.js and npm are installed on your computer and run the following command:
 
     npm install -g testcafe
 
-###Installing Reporters
+### Installing Reporters
 
-1.  TestCafe Reporter HTML
+1.  #### TestCafe Reporter HTML
 
         npm install testcafe-reporter-html
 
-2.  TestCafe Reporter Allure
+2.  #### TestCafe Reporter Allure
 
         npm install testcafe-reporter-allure
 
-3.  TestCafe Reporter List
+3.  #### TestCafe Reporter List
 
         npm install testcafe-reporter-list
 
     ###Generating Reports
 
-4.  TestCafe Reporter HTML
+4.  #### TestCafe Reporter HTML
 
         testcafe <specify-browser> <specify the test with path> --reporter html:<path-to-store-report>
         testcafe chrome test/testcafe-basic-examples/ --reporter html:test-artifacts/reports/reporter.html
 
-5.  TestCafe Reporter Allure
+5.  #### TestCafe Reporter Allure
 
         allure generate allure/allure-results --clean -o allure/allure-report && allure open allure/allure-report
 
-###Installing Optional Tools
+### Building Docker Image
 
-1.  ####Xpath To CSS
+To Build Docker Image, run command: "**_docker build -t <preferredImageName:latest> ._**"
+
+     docker build -t testcafe_uiautomation:latest .
+
+### Docker Setup For Running TestCafe Tests
+
+1. Run command `docker-compose up` to start the launch the container(container name is set as TestCafe_vX.X.X)
+2. On container start, the Entrypoint defined in the Docker file will be executed
+3. For Entrypoint, additional parameters needs to be defined - `BROWSER, CONCURRENCY`
+4. The Additional parameters by default are defined in .env file which can be updated accordingly
+5. Run command `docker-compose down` to bring down the container
+
+### Installing Optional Tools
+
+1.  #### Xpath To CSS
+
     For using XPath to identify elements as TestCafe natively doesn't support XPath
 
         npm install --save-dev xpath-to-css
 
-2.  ####Prettier
+2.  #### Prettier
+
     For formatting code
 
         npm install prettier
 
-3.  ####FFMPEG
+3.  #### FFMPEG
+
     For capturing videos
 
         npm install --save @ffmpeg-installer/ffmpeg
 
-4.  ####Faker Library
+4.  #### Faker Library
+
     For generating Fake Data
 
         npm install @faker-js/faker --save-dev
 
-5.  ####JSDoc Library
+5.  #### JSDoc Library
+
     For generating Javascript documentation
     **[Check Instructions for JSDoc](https://www.section.io/engineering-education/jsdoc-documentation/)**
 
@@ -81,7 +101,7 @@ Ensure that Node.js and npm are installed on your computer and run the following
     For Running all the Tests in the Selected Browsers
     **[Check Instructions to Add the Extension](https://marketplace.visualstudio.com/items?itemName=sshimono.testlatte)**
 
-###Generating JSDoc
+### Generating JSDoc
 
 1. Install JSDoc package
 2. Setup the **_jsdoc.json_** configuration file
@@ -93,7 +113,7 @@ Ensure that Node.js and npm are installed on your computer and run the following
 
    npm run doc
 
-##Examples Included
+## Examples Included
 
 | Examples                                                                                                     | Packages/Files/Location                                                                                                                                                  |
 | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -122,7 +142,7 @@ Ensure that Node.js and npm are installed on your computer and run the following
 | Running Test Via NPM(should have scripts defined in package.json) - **npm run <script-name>**                                                              | npm run test:chrome                                                                                                                                 |
 | Running Test and capturing Videos on Failures - **testcafe <specify-browser> <specify the test with path> --video <path> --video-options failedOnly=true** | testcafe chrome test/testcafe-basic-examples/firstSelectorTest.js -s takeOnFails=true --video test-artifcats/videos --video-options failedOnly=true |
 
-##Useful NPM Commands
+## Useful NPM Commands
 
 1. To clean install node_modules
 
@@ -135,3 +155,13 @@ Ensure that Node.js and npm are installed on your computer and run the following
 3. To move packages from devDependencies to Dependencies
 
    npm i <module_name> -P
+
+## Known Issues
+
+Please check **[Issues](hhttps://github.com/sritaj/TestCafe_UIAutomation/issues)** for any open issues/known caveats
+
+## Troubleshoots
+
+### Issues with Running Tests in Docker
+
+Tests are not running in chrome,firefox browser in Docker container -> In Docker container, use the `chrome:headless` or `firefox:headless` version
