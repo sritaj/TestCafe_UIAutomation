@@ -2,7 +2,7 @@
 
 # TestCafe UIAutomation Framework
 
-UI Automation Framework with **_TestCafe_** demonstrating **_common operations, pom, taking screenshots and videos, tests on multiple browsers, multiple instances in parallel_** with integration of **_Allure Reports, Reporter HTML_** for generating Test reports.
+UI Automation Framework with **_TestCafe_** demonstrating **_common operations, pom, taking screenshots and videos, tests on multiple browsers, multiple instances in parallel_** with integration of **_Allure Reports, Reporter HTML_** for generating Test reports and **_DockerSetup_** for running the Tests
 
 ## Tech Stack
 
@@ -164,4 +164,6 @@ Please check **[Issues](hhttps://github.com/sritaj/TestCafe_UIAutomation/issues)
 
 ### Issues with Running Tests in Docker
 
-Tests are not running in chrome,firefox browser in Docker container -> In Docker container, use the `chrome:headless` or `firefox:headless` version
+1. Tests are not running in chrome,firefox browser in Docker container -> In Docker container, use the `chrome:headless` or `firefox:headless` version
+2. Test-output is not getting copied to Local system -> Check Volume Mappings in Docker compose file as per the Local Environment
+3. Running Docker Image in Interactive Mode -> Comment out Entrypoint with # in Docker file, build the docker image and use the command `docker run -it <imagename>`
