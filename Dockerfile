@@ -99,4 +99,4 @@ CMD ["bash"]
 
 # TODO - Not taking the Test Path, need to fix
 # Entrypoint for docker compose for running the Tests in specified Browser and setting the Concurrency
-ENTRYPOINT testcafe -c ${CONCURRENCY} ${BROWSER} test --reporter html:test-artifacts/reports/reporter.html 
+ENTRYPOINT testcafe -c ${CONCURRENCY} ${BROWSER} test --reporter html:test-artifacts/reports/reporter.html --reporter list
