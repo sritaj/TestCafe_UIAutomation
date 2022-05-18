@@ -1,9 +1,9 @@
 <?xml version='1.0'?>
-<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1652725980254' stop='1652725980254'>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1652864269816' stop='1652864269817'>
     <name>Test demonstrating Selectors in TestCafe</name>
     <title>Test demonstrating Selectors in TestCafe</title>
     <test-cases>
-        <test-case start='1652725980254' status='passed' stop='1652725987485'>
+        <test-case start='1652864269816' status='passed' stop='1652864275586'>
             <name>Validate Scenario with Selectors usage</name>
             <title>Validate Scenario with Selectors usage</title>
             <labels>
