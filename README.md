@@ -91,13 +91,13 @@ To Build Docker Image, run command: "**_docker build -t <preferredImageName:late
 
         npm install -g jsdoc
 
-6.  ####VSCode TestCafe Test Runner
+6.  #### VSCode TestCafe Test Runner
     For Running test using Right click actions
     **[Check Instructions to Add the Extension](https://marketplace.visualstudio.com/items?itemName=romanresh.testcafe-test-runner)**
-7.  ####VSCode TestCafe Snippets
+7.  #### V SCode TestCafe Snippets
     For Getting Code Snippets
     **[Check Instructions to Add the Extension](https://marketplace.visualstudio.com/items?itemName=hdorgeval.testcafe-snippets)**
-8.  ####VSCode Test Latte
+8.  #### VSCode Test Latte
     For Running all the Tests in the Selected Browsers
     **[Check Instructions to Add the Extension](https://marketplace.visualstudio.com/items?itemName=sshimono.testlatte)**
 
@@ -107,11 +107,11 @@ To Build Docker Image, run command: "**_docker build -t <preferredImageName:late
 2. Setup the **_jsdoc.json_** configuration file
 3. Include the Script for JSDoc in **_package.json_**
 
-   "doc": "jsdoc -c jsdoc.json"
+       "doc": "jsdoc -c jsdoc.json"
 
 4. Run the NPM command to generate the documentation
 
-   npm run doc
+        npm run doc
 
 ## Examples Included
 
@@ -124,7 +124,7 @@ To Build Docker Image, run command: "**_docker build -t <preferredImageName:late
 | POM Pages and Defined Tests                                                                                  | **_pages/ecommerce-pages_** -> pom pages defining selectors & methods, **_test/ecommerce-test_** -> tests implementing the pom pages                                     |
 | Testcafe Allure Reports                                                                                      | **_doc-allure-config_** -> configuration for allure report, **_test/testcafe-basic-examples/allureReportMetaInfoTest.js_** -> test for generating Meta for allure report |
 
-#Running The Test(s)
+# Running The Test(s)
 [Checkout Official Documentation for Running Tests](https://testcafe.io/documentation/402830/guides/basic-guides/run-tests)
 
 | Command                                                                                                                                                    | Example                                                                                                                                             |
@@ -146,19 +146,19 @@ To Build Docker Image, run command: "**_docker build -t <preferredImageName:late
 
 1. To clean install node_modules
 
-   npm clean-install
+    `npm clean-install`
 
 2. To remove packages
 
-   npm uninstall <package-name>
+   `npm uninstall <package-name>`
 
 3. To move packages from devDependencies to Dependencies
 
-   npm i <module_name> -P
+   `npm i <module_name> -P`
 
 ## Known Issues
 
-Please check **[Issues](hhttps://github.com/sritaj/TestCafe_UIAutomation/issues)** for any open issues/known caveats
+Please check **[Issues](https://github.com/sritaj/TestCafe_UIAutomation/issues)** for any open issues/known caveats
 
 ## Troubleshoots
 
