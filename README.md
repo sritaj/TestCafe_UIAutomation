@@ -29,18 +29,22 @@ Ensure that Node.js and npm are installed on your computer and run the following
 
         npm install testcafe-reporter-allure
 
+    **Installing Supporting Command Line Tools -**
+
+        npm install -g allure-commandline
+
 3.  #### TestCafe Reporter List
 
         npm install testcafe-reporter-list
 
-    ###Generating Reports
+### Generating Reports
 
-4.  #### TestCafe Reporter HTML
+1.  #### TestCafe Reporter HTML
 
         testcafe <specify-browser> <specify the test with path> --reporter html:<path-to-store-report>
         testcafe chrome test/testcafe-basic-examples/ --reporter html:test-artifacts/reports/reporter.html
 
-5.  #### TestCafe Reporter Allure
+2.  #### TestCafe Reporter Allure
 
         allure generate allure/allure-results --clean -o allure/allure-report && allure open allure/allure-report
 
@@ -103,13 +107,13 @@ To Build Docker Image, run command: "**_docker build -t <preferredImageName:late
 
 ### Generating JSDoc
 
-1. Install JSDoc package
-2. Setup the **_jsdoc.json_** configuration file
-3. Include the Script for JSDoc in **_package.json_**
+1.  Install JSDoc package
+2.  Setup the **_jsdoc.json_** configuration file
+3.  Include the Script for JSDoc in **_package.json_**
 
-       "doc": "jsdoc -c jsdoc.json"
+    "doc": "jsdoc -c jsdoc.json"
 
-4. Run the NPM command to generate the documentation
+4.  Run the NPM command to generate the documentation
 
         npm run doc
 
@@ -125,6 +129,7 @@ To Build Docker Image, run command: "**_docker build -t <preferredImageName:late
 | Testcafe Allure Reports                                                                                      | **_doc-allure-config_** -> configuration for allure report, **_test/testcafe-basic-examples/allureReportMetaInfoTest.js_** -> test for generating Meta for allure report |
 
 # Running The Test(s)
+
 [Checkout Official Documentation for Running Tests](https://testcafe.io/documentation/402830/guides/basic-guides/run-tests)
 
 | Command                                                                                                                                                    | Example                                                                                                                                             |
@@ -146,7 +151,7 @@ To Build Docker Image, run command: "**_docker build -t <preferredImageName:late
 
 1. To clean install node_modules
 
-    `npm clean-install`
+   `npm clean-install`
 
 2. To remove packages
 
