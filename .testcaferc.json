@@ -21,6 +21,10 @@
 		},
 		{
 			"name": "allure"
+		},
+		{
+			"name": "html",
+			"output": "test-artifacts/reports/reporter.html"
 		}
 	],
 	"userVariables": {
